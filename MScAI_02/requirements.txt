@@ -1,0 +1,55 @@
+import os
+import csv
+import openai
+import asyncio
+import aiohttp
+import logging
+import numpy as np
+import pandas as pd
+from datetime import datetime
+from dotenv import load_dotenv
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
+
+### os
+- `os`: Used for file and directory operations (checking paths, walking directories, creating folders, etc.).
+
+### csv
+- `csv`: Handles reading from and writing to CSV files in a structured format.
+
+### openai
+- `openai`: Used for sending prompts to the GPT-4 API for emotion classification.
+openai~=0.28.0
+
+### asyncio
+- `asyncio`: Handles the event loop and manages concurrent API calls efficiently.
+
+### aiohttp
+- `aiohttp`: Used for making asynchronous HTTP requests to the OpenAI API.
+aiohttp~=3.11.11
+
+### logging
+- `logging`: Tracks runtime events and outputs useful debug and info messages, especially during API calls or evaluations.
+
+### numpy
+- `numpy`: Used for numerical operations and data splitting (e.g., train/test splits).
+numpy~=2.2.2
+
+### pandas
+- `pandas`: Handles data manipulation, reading and writing CSVs, and dataframe operations.
+pandas~=2.2.3
+
+### datetime
+- `datetime`: Generates timestamps (e.g., for logs or filenames), handles date/time calculations.
+
+### python-dotenv
+- `python-dotenv`: Loads API keys and configuration from a `.env` file securely.
+dotenv~=0.9.9
+python-dotenv~=1.1.0
+
+### scikit-learn
+- `scikit-learn`: Used for evaluating classification performance: accuracy, precision, recall, F1, and ROC AUC.
+  - `precision_score`: How many predicted positives are correct.
+  - `recall_score`: How many actual positives are correctly predicted.
+  - `f1_score`: Harmonic mean of precision and recall.
+  - `roc_auc_score`: Area under the ROC curve, evaluates binary classifiers.
+scikit-learn~=1.6.1

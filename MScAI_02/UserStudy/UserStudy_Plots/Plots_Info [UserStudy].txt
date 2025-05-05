@@ -1,0 +1,41 @@
+This folder called UserStudy_Plots contains all images that helps visualize and understand UserStudy dataset better.
+
+1. Arousal_Class [UserStudy].png
+This bar chart shows how a machine learning model performs on classifying "Arousal_Class" in a user study, based on different amounts of training data (from 10% to 90%).
+- Performance improves as more training data is used. You can see that bars generally get taller from left (10%) to right (90%).
+- Precision and ROC_AUC are the highest metrics, especially at 90%, both close to or at 1 (perfect).
+- Recall is lower than other metrics, especially with less training data — suggesting the model misses some positive cases early on.
+- F1_Score catches up only after 60% data — showing the model needs more data to balance precision and recall well.
+As the amount of training data increases, the model's performance across all metrics improves significantly,
+with precision and ROC\_AUC reaching near-perfect levels, while recall and F1 score show noticeable gains after 60% data usage.
+
+2. FewShot - Split_Performance [UserStudy].png
+This chart shows how well a few-shot learning model performs on valence and arousal classification tasks as the training data increases from 10% to 90%.
+- Performance improves across the board with more data.
+- Precision and ROC_AUC are strong for both tasks, especially at higher data levels.
+- Recall is lower than precision at small data sizes, especially for arousal.
+- F1 and F2 scores improve significantly after 50–60% data, meaning the model balances precision and recall better with more data.
+- At 90%, both valence and arousal tasks reach high performance — close to or above 0.9 in most metrics.
+Model performance on both valence and arousal classification steadily improves with more training data,
+with high precision and ROC_AUC throughout and stronger recall and F1/F2 scores emerging after 60%.
+
+3. Split_Distribution [UserStudy].png
+This chart shows how performance metrics for valence and arousal classification are built up from different amounts of training data, ranging from 10% to 90% (Series1 to Series9).
+- Valence tasks perform better than arousal tasks, especially in accuracy and ROC_AUC.
+- Arousal Recall and F2 have the lowest total height, suggesting the model struggles with these even as training data increases.
+- Each additional data split (from 10% up) adds to performance, shown by the layered bar structure.
+This chart shows that model performance improves steadily as more training data is added, with valence classification consistently outperforming arousal classification, especially in recall and F2 score.
+
+4. Valence_Class [UserStudy].png
+This chart shows how well a model performs at predicting valence class (emotional positivity/negativity) in a user study, depending on how much training data is used — from 10% to 90%.
+- Accuracy, Recall, and ROC_AUC improve steadily with more training data.
+- Precision stays fairly consistent, even dipping slightly at higher data sizes — possibly due to the model becoming more inclusive (higher recall).
+- F1_Score increases gradually, reflecting a better balance between precision and recall as data grows.
+- With 90% training data, the model hits high marks on Accuracy (~0.9) and ROC_AUC (~0.85+), showing strong overall performance.
+Model performance on valence classification improves steadily with more training data, achieving high accuracy and ROC_AUC by 90%, with recall driving most of the gains.
+
+5. ZeroShot - Metrics [UserStudy].png
+This chart shows how a model performs on valence and arousal classification tasks in a zero-shot setting across 5 different runs.
+- the model shows modest and fairly consistent performance on both valence and arousal tasks,
+- with valence precision and arousal recall being slightly stronger,
+- but ROC AUC scores near 0.5 indicate minimal class separation ability without task-specific training.
