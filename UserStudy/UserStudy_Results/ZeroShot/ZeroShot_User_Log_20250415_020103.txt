@@ -1,0 +1,87 @@
+2025-04-15 02:01:03,125 - ========== Run 1 ==========
+2025-04-15 02:26:35,717 - \u2705 Metrics:
+2025-04-15 02:26:35,739 - Valence Accuracy: 0.492
+2025-04-15 02:26:35,739 - Valence Precision: 0.585
+2025-04-15 02:26:35,740 - Valence Recall: 0.415
+2025-04-15 02:26:35,740 - Valence F1: 0.486
+2025-04-15 02:26:35,740 - Valence ROC AUC: 0.506
+2025-04-15 02:26:35,740 - Arousal Accuracy: 0.519
+2025-04-15 02:26:35,741 - Arousal Precision: 0.538
+2025-04-15 02:26:35,741 - Arousal Recall: 0.710
+2025-04-15 02:26:35,741 - Arousal F1: 0.612
+2025-04-15 02:26:35,741 - Arousal ROC AUC: 0.505
+2025-04-15 02:26:35,741 - ========== Run 2 ==========
+2025-04-15 02:47:08,619 - \u2705 Metrics:
+2025-04-15 02:47:08,632 - Valence Accuracy: 0.538
+2025-04-15 02:47:08,632 - Valence Precision: 0.596
+2025-04-15 02:47:08,632 - Valence Recall: 0.618
+2025-04-15 02:47:08,632 - Valence F1: 0.607
+2025-04-15 02:47:08,632 - Valence ROC AUC: 0.523
+2025-04-15 02:47:08,632 - Arousal Accuracy: 0.521
+2025-04-15 02:47:08,632 - Arousal Precision: 0.546
+2025-04-15 02:47:08,632 - Arousal Recall: 0.611
+2025-04-15 02:47:08,632 - Arousal F1: 0.577
+2025-04-15 02:47:08,632 - Arousal ROC AUC: 0.514
+2025-04-15 02:47:08,634 - ========== Run 3 ==========
+2025-04-15 03:07:03,846 - \u2705 Metrics:
+2025-04-15 03:07:03,861 - Valence Accuracy: 0.486
+2025-04-15 03:07:03,862 - Valence Precision: 0.594
+2025-04-15 03:07:03,862 - Valence Recall: 0.345
+2025-04-15 03:07:03,862 - Valence F1: 0.436
+2025-04-15 03:07:03,862 - Valence ROC AUC: 0.511
+2025-04-15 03:07:03,863 - Arousal Accuracy: 0.530
+2025-04-15 03:07:03,863 - Arousal Precision: 0.545
+2025-04-15 03:07:03,863 - Arousal Recall: 0.733
+2025-04-15 03:07:03,863 - Arousal F1: 0.625
+2025-04-15 03:07:03,863 - Arousal ROC AUC: 0.516
+2025-04-15 03:07:03,864 - ========== Run 4 ==========
+2025-04-15 03:28:15,318 - \u2705 Metrics:
+2025-04-15 03:28:15,329 - Valence Accuracy: 0.490
+2025-04-15 03:28:15,329 - Valence Precision: 0.585
+2025-04-15 03:28:15,330 - Valence Recall: 0.403
+2025-04-15 03:28:15,330 - Valence F1: 0.477
+2025-04-15 03:28:15,330 - Valence ROC AUC: 0.506
+2025-04-15 03:28:15,330 - Arousal Accuracy: 0.522
+2025-04-15 03:28:15,331 - Arousal Precision: 0.551
+2025-04-15 03:28:15,331 - Arousal Recall: 0.571
+2025-04-15 03:28:15,331 - Arousal F1: 0.561
+2025-04-15 03:28:15,331 - Arousal ROC AUC: 0.518
+2025-04-15 03:28:15,332 - ========== Run 5 ==========
+2025-04-15 03:49:25,248 - \u2705 Metrics:
+2025-04-15 03:49:25,268 - Valence Accuracy: 0.498
+2025-04-15 03:49:25,268 - Valence Precision: 0.582
+2025-04-15 03:49:25,269 - Valence Recall: 0.464
+2025-04-15 03:49:25,269 - Valence F1: 0.516
+2025-04-15 03:49:25,270 - Valence ROC AUC: 0.504
+2025-04-15 03:49:25,270 - Arousal Accuracy: 0.524
+2025-04-15 03:49:25,270 - Arousal Precision: 0.545
+2025-04-15 03:49:25,270 - Arousal Recall: 0.666
+2025-04-15 03:49:25,270 - Arousal F1: 0.599
+2025-04-15 03:49:25,270 - Arousal ROC AUC: 0.514
+2025-04-15 03:49:25,279 - 
+
+====== \U0001f4ca Final Summary over 5 Runs ======
+
+Average Metrics:
+Valence Accuracy: 0.501
+Valence Precision: 0.588
+Valence Recall: 0.449
+Valence F1: 0.504
+Valence ROC AUC: 0.510
+Arousal Accuracy: 0.523
+Arousal Precision: 0.545
+Arousal Recall: 0.658
+Arousal F1: 0.595
+Arousal ROC AUC: 0.513
+
+Standard Deviation:
+Valence Accuracy: 0.019
+Valence Precision: 0.006
+Valence Recall: 0.092
+Valence F1: 0.057
+Valence ROC AUC: 0.007
+Arousal Accuracy: 0.004
+Arousal Precision: 0.004
+Arousal Recall: 0.060
+Arousal F1: 0.023
+Arousal ROC AUC: 0.004

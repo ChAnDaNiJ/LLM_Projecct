@@ -1,0 +1,68 @@
+This folder called CASE_Plots contains all images that helps visualize and understand CASE dataset better.
+
+1. Arousal_Class [CASE].png
+- FewShot outperforms ZeroShot across all metrics, especially in Precision, Recall, and F1.
+- Accuracy is very close between the two, with ZeroShot slightly ahead.
+- ROC AUC and F1 show substantial gaps, favoring FewShot, indicating better discrimination and balance in predictions.
+The FewShot model performs better than the ZeroShot model in almost every area,
+especially in finding and correctly identifying arousal.
+The only place ZeroShot is slightly better is in basic accuracy, but just barely.
+
+2. Arousal_Distribution [CASE].png
+- Each bar pair represents one participant.
+- Blue bars (Arousal_1) are usually higher than the orange bars.
+- This means most participants had more moments of Arousal_1 than Arousal_2.
+- The counts vary across participants, but Arousal_1 is more common overall.
+There’s an imbalance in the data — Arousal_1 happens more often than Arousal_2 for nearly everyone.
+This is useful to know because it can affect how well models learn to predict each class.
+
+3. Data_Distribution [CASE].png
+- Each bar shows how much data was collected for one subject, broken down by signal type.
+- The height of the whole bar = total amount of data for that subject.
+- There is some variation between subjects, but overall the types of data are fairly consistent across people.
+- A few subjects, like sub_7 and sub_29, have noticeably more total data.
+This helps check for balance in the dataset.
+Uneven data across participants or sensors can affect training and evaluation of machine learning models.
+
+4. Overall_Distribution [CASE].png
+- Low valence (blue) and low arousal (green) have the highest counts — over 1 million each.
+- High valence (orange) and high arousal (red) have much lower counts, under half a million each.
+The dataset has many more examples of low valence (negative mood) and low arousal (calm or inactive states) than positive or high-energy emotions.
+This imbalance can affect model training — a model may become biased toward detecting low-valence or low-arousal states simply because there’s more of that data.
+
+5. ROC-AUC [CASE].png
+- ROC-AUC measures how well a model distinguishes between classes.
+- A score of 0.5 means it's guessing randomly; higher is better.
+- All the scores are very close to 0.5, which means the models are barely better than random.
+- For Arousal, FewShot slightly outperforms ZeroShot.
+- For Valence, ZeroShot slightly outperforms FewShot.
+Neither method performs strongly — the classification models are struggling with both arousal and valence on this dataset.
+The differences between methods are minimal.
+
+6. Valence-Arousal [CASE].png
+- Each participant (sub_1 to sub_30) has an average valence and arousal score.
+- Based on those scores, they’re assigned to either class 1 (low) or class 2 (high) for both valence and arousal.
+- Most participants fall into low valence and low arousal (class 1).
+- Some participants (e.g., sub_3, sub_7, sub_16) are labeled as high valence or high arousal (class 2).
+This plot combines continuous scores (valence/arousal) with binary classifications, showing how individual participants’ emotional data gets categorized.
+
+7. Valence-Arousal Combined_Distribution [CASE].png
+- Low_Low is the most common emotional state by far, with over 750,000 samples.
+- The other three categories (Low_High, High_Low, High_High) have much fewer samples—around 230,000 to 250,000 each.
+This kind of class imbalance can affect machine learning models. Since most data is in the Low_Low category,
+The model might be biased toward predicting that class unless steps are taken to balance the data.
+
+8. Valence_Class  [CASE].png
+- FewShot consistently outperforms ZeroShot across all metrics.
+- The biggest gap is seen in Accuracy (~0.63 for FewShot vs. ~0.33 for ZeroShot).
+- ROC AUC is the most balanced metric, with both setups scoring around 0.50 (indicating random chance level performance).
+- Precision, Recall, and F1 scores are all higher for FewShot, meaning it detects the correct valence labels more often and more reliably.
+FewShot learning provides a noticeable improvement in valence classification performance over ZeroShot,
+though overall metrics remain relatively low—suggesting the task is challenging, perhaps due to class imbalance or subtle emotional cues in the data.
+
+9. Valence_Distribution [CASE].png
+- Across nearly all participants, Valence_1 (blue) appears more frequently than Valence_2 (orange).
+- The class distribution is imbalanced, with many participants showing almost double or more instances of Valence_1.
+- Some participants (e.g., 8, 17, 18) have a more balanced distribution, while others (e.g., 21, 27) show extreme skew toward Valence_1.
+This class imbalance could negatively affect model performance — models may overfit to Valence_1 and underperform on Valence_2.
+Preprocessing steps like resampling or class-weighting might be needed to improve classification fairness.
